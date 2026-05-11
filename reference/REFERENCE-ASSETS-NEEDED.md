@@ -420,3 +420,50 @@ User-provided premium photo for Paver Patios & Retaining Walls. Shows both eleme
 
 Remaining services on Unsplash placeholders: Irrigation, Sod.
 
+---
+
+## 2026-05-11 — v7.11 Add Irrigation hero image (homepage card + subpage)
+
+User-provided photo for Irrigation & Sprinkler Systems. Image has a text + CTA panel baked into the left ~45% ("Irrigation Systems & Sprinkler Systems" headline + feature chips + "Schedule a Consultation" button). To avoid duplicating the page's own H1 / CTAs, the image is wired with `object-position: right center` so only the right portion (worker installing a sprinkler with active spray in a planted bed) renders.
+
+### New local asset
+
+| File | Source | Subject | Size |
+|---|---|---|---|
+| `reference/photos/lap-irrigation-hero.png` | User-provided (originally `/Users/luisalfredomartinez/Desktop/e9773cfc-6d69-4566-b3b2-82d34ff4e18f.png`) | Landscaper kneeling to install a sprinkler head with active water spray, surrounded by mulched bed and perennial planting. Left side of source image carries a text + CTA overlay (excluded by crop). | ~2.5 MB PNG (no re-encode) |
+
+### Swap
+
+| Slot | Previous | New | Alt (identical on card + subpage) |
+|---|---|---|---|
+| Homepage Irrigation service card (`index.html`) | Unsplash `1616168558572-69aed7a96677` (water through pipe) | `reference/photos/lap-irrigation-hero.png` | "Landscaper installing a sprinkler head with active spray in a planted bed" |
+| Irrigation subpage hero (`services/irrigation-sprinkler-systems.html:72`) | Same Unsplash ID | `../reference/photos/lap-irrigation-hero.png` | Same as above |
+
+### CSS focal-point
+
+Added at `styles.css` (in the v7.2 image-polish block):
+```css
+.svc-img img[src*="lap-irrigation-hero"],
+.svc-hero-photo[src*="lap-irrigation-hero"] { object-position: right center; }
+```
+
+This anchors the crop to the right edge of the source image so the baked-in text/CTA panel (left ~45%) is excluded on both the 16:11 homepage card and the 4:3 subpage hero.
+
+`data-fallback-tile="irrigation"` retained on both.
+
+### Local LAP-owned assets after v7.11
+
+| Service | Local file |
+|---|---|
+| Paver Patios & Retaining Walls | `reference/photos/lap-patio-hero.png` (v7.10) |
+| Irrigation & Sprinkler Systems | `reference/photos/lap-irrigation-hero.png` (v7.11) |
+| Landscape Lighting | `reference/photos/lap-lighting-hero.png` (v7.7) |
+| Drainage & Grading Solutions | `reference/photos/lap-drainage-hero.png` (v7.9) |
+| Mulch, Aeration & Pruning | `reference/photos/lap-mulch-hero.png` (v7.8) |
+
+Only Sod remains on Unsplash placeholder.
+
+### Note for a future pass
+
+Long-term, this irrigation source image would be cleaner without the baked-in text/CTA — re-export from the original generator without the overlay, or replace with a real LAP project photo when available. The right-anchored crop is a tactical fix, not a final.
+
