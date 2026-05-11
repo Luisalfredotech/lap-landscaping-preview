@@ -388,3 +388,35 @@ User-provided premium photo for Drainage & Grading Solutions. Third local "real 
 
 Remaining services (Paver, Irrigation, Sod) still on Unsplash placeholders.
 
+---
+
+## 2026-05-11 — v7.10 Add Paver Patios hero image (homepage card + subpage)
+
+User-provided premium photo for Paver Patios & Retaining Walls. Shows both elements (paver patio AND stone retaining walls) at golden hour with fire pit, outdoor dining, planted beds, and house behind. Fourth local "real project" asset.
+
+### New local asset
+
+| File | Source | Subject | Size |
+|---|---|---|---|
+| `reference/photos/lap-patio-hero.png` | User-provided (originally `/Users/luisalfredomartinez/Desktop/e4891d7b-9084-467f-aa34-76d27f01c020.png`) | Curved paver patio with stone retaining walls, fire pit, outdoor dining set, perennial beds, stone steps to residential home, golden-hour sunset | ~2.7 MB PNG (no re-encode) |
+
+### Swap
+
+| Slot | Previous | New | Alt (identical on card + subpage) |
+|---|---|---|---|
+| Homepage Paver Patios service card (`index.html`) | Unsplash `1725586660046-0c2bea151543` (hand-laying paver bricks) | `reference/photos/lap-patio-hero.png` | "Curved paver patio with stone retaining walls, fire pit and outdoor dining at golden hour" |
+| Paver subpage hero (`services/paver-patios-retaining-walls.html:72`) | Same Unsplash ID | `../reference/photos/lap-patio-hero.png` | Same as above |
+
+`data-fallback-tile="patio"` retained on both.
+
+### Local LAP-owned assets after v7.10
+
+| Service | Local file |
+|---|---|
+| Paver Patios & Retaining Walls | `reference/photos/lap-patio-hero.png` (v7.10) |
+| Landscape Lighting | `reference/photos/lap-lighting-hero.png` (v7.7) |
+| Drainage & Grading Solutions | `reference/photos/lap-drainage-hero.png` (v7.9) |
+| Mulch, Aeration & Pruning | `reference/photos/lap-mulch-hero.png` (v7.8) |
+
+Remaining services on Unsplash placeholders: Irrigation, Sod.
+
