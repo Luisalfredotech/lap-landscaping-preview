@@ -65,7 +65,7 @@
       'ftr.signoff.tag': 'Built to last. Built local.',
       'services.eyebrow': 'What We Do',
       'services.title': 'Complete Outdoor Solutions',
-      'services.lede': 'Six services. One crew. The same team walks your property, draws the plan, and builds the result.',
+      'services.lede': 'Nine services. One crew. The same team walks your property, draws the plan, and builds the result.',
       'svc.link': 'Explore →',
       'svc.patio.tag': 'Patios & Walls',
       'svc.patio.h': 'Paver Patios & Retaining Walls',
