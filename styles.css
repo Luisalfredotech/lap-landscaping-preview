@@ -556,7 +556,10 @@ p { margin: 0 0 1em; }
 .img-fallback[data-tile="lighting"] { background: radial-gradient(circle at 75% 25%, rgba(255, 220, 150, .55), transparent 55%), linear-gradient(135deg, #2A2A2A, #4A3A2A); }
 .img-fallback[data-tile="drainage"] { background: radial-gradient(circle at 25% 30%, rgba(255,255,255,.35), transparent 60%), linear-gradient(135deg, #5C7A6B, #2F4538); }
 .img-fallback[data-tile="lawn"] { background: radial-gradient(circle at 25% 30%, rgba(255,255,255,.35), transparent 60%), linear-gradient(135deg, #A8C0A4, #4A7C59); }
-.img-fallback[data-tile="walls"] { background: radial-gradient(circle at 25% 30%, rgba(255,255,255,.35), transparent 60%), linear-gradient(135deg, #B89878, #5C4530); }
+.img-fallback[data-tile="walls"]    { background: radial-gradient(circle at 25% 30%, rgba(255,255,255,.35), transparent 60%), linear-gradient(135deg, #B89878, #5C4530); }
+.img-fallback[data-tile="stone"]    { background: radial-gradient(circle at 25% 30%, rgba(255,255,255,.35), transparent 60%), linear-gradient(135deg, #D4C4A0, #9A8260); }
+.img-fallback[data-tile="concrete"] { background: radial-gradient(circle at 25% 30%, rgba(255,255,255,.25), transparent 60%), linear-gradient(135deg, #B8B8B8, #6A6A6A); }
+.img-fallback[data-tile="drywall"]  { background: radial-gradient(circle at 25% 30%, rgba(255,255,255,.40), transparent 60%), linear-gradient(135deg, #E0D8C8, #A09080); }
 
 /* ============== ABOUT ============== */
 .about-section { background: var(--cream); padding-top: clamp(72px, 8vw, 130px); padding-bottom: clamp(72px, 8vw, 130px); }
