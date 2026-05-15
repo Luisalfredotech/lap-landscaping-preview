@@ -163,8 +163,9 @@ p { margin: 0 0 1em; }
 }
 .brand-logo-light {
   height: 64px;
-  filter: brightness(0) saturate(100%) invert(99%) sepia(8%) saturate(296%) hue-rotate(323deg) brightness(105%) contrast(94%);
-  /* Soft cream tint for dark footer — keeps the LAP shape readable */
+  filter: brightness(1.8) contrast(0.85);
+  mix-blend-mode: screen;
+  /* screen blend on dark footer makes white background transparent, logo stays readable */
 }
 
 .nav {
@@ -480,6 +481,7 @@ p { margin: 0 0 1em; }
   gap: 26px;
 }
 .svc-card {
+  position: relative;
   background: #fff;
   border-radius: var(--r-lg);
   border: 1px solid var(--line);
@@ -535,6 +537,16 @@ p { margin: 0 0 1em; }
   color: var(--green);
 }
 .svc-body p { color: var(--mute); margin: 0 0 8px; font-size: .94rem; }
+.svc-card-logo {
+  position: absolute;
+  bottom: 14px;
+  right: 16px;
+  width: 34px;
+  height: auto;
+  opacity: 0.15;
+  pointer-events: none;
+  display: block;
+}
 .svc-link {
   color: var(--green);
   font-weight: 700;
