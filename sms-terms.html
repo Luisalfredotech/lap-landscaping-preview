@@ -27,8 +27,26 @@
 .legal-wrap p { margin-bottom: 1rem; }
 .legal-wrap ul { padding-left: 1.4rem; margin-bottom: 1.25rem; }
 .legal-wrap li { margin-bottom: .4rem; }
-.legal-wrap a { color: var(--tan); text-decoration: underline; }
-.legal-wrap a:hover { color: var(--tan-deep); }
+.legal-wrap a { color: var(--green-2); text-decoration: underline; font-weight: 500; }
+.legal-wrap a:hover { color: var(--green); text-decoration: none; }
+.legal-wrap a[href^="tel:"],
+.legal-wrap a[href^="mailto:"] {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--green);
+  text-decoration: none;
+  background: var(--cream-2);
+  padding: .25em .7em;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+.legal-wrap a[href^="tel:"]:hover,
+.legal-wrap a[href^="mailto:"]:hover {
+  background: var(--cream);
+  border-color: var(--green-3);
+}
 .legal-notice { background: var(--cream-2); border-left: 3px solid var(--green-3); padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin: 1.5rem 0; }
 .legal-notice p { margin-bottom: 0; font-size: .9375rem; }
 .sms-keyword { display: inline-block; background: var(--green); color: var(--cream); font-family: monospace; font-size: .9rem; padding: .15em .5em; border-radius: 4px; font-weight: 700; letter-spacing: .04em; }
@@ -51,7 +69,7 @@
     <span class="util-sep" aria-hidden="true">•</span>
     <a class="util-link util-mail" href="mailto:service@laplandscaping.com">service@laplandscaping.com</a>
     <span class="util-spacer"></span>
-    <span class="util-bilingual"><span class="bilingual-flag">🌎</span><span data-i18n="util.bilingual">Hablamos Español · We serve clients in English &amp; Spanish</span></span>
+    <span class="util-legal-group"><a class="util-link util-legal" href="privacy-policy.html">Privacy Policy</a><span class="util-legal-sep" aria-hidden="true">&middot;</span><a class="util-link util-legal" href="sms-terms.html">SMS Terms</a></span><span class="util-bilingual"><span class="bilingual-flag">🌎</span><span data-i18n="util.bilingual">Hablamos Español · We serve clients in English &amp; Spanish</span></span>
     <div class="lang-toggle" role="group" aria-label="Language">
       <button type="button" class="lang-btn is-active" data-lang-btn="en" aria-pressed="true">EN</button>
       <span aria-hidden="true">|</span>

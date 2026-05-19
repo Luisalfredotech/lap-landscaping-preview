@@ -102,6 +102,11 @@ p { margin: 0 0 1em; }
   font-weight: 500;
 }
 .util-link:hover { color: var(--tan); opacity: 1; }
+.util-legal-group { display: inline-flex; align-items: center; gap: 6px; }
+.util-legal { font-size: .78rem; opacity: .72; letter-spacing: .01em; }
+.util-legal:hover { opacity: 1; color: var(--tan); }
+.util-legal-sep { opacity: .45; font-size: .78rem; }
+@media (max-width: 900px) { .util-legal-group { display: none; } }
 .lang-toggle {
   display: inline-flex;
   align-items: center;
