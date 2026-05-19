@@ -153,7 +153,26 @@
       'svc.h.problems': 'Problems we solve',
       'svc.h.process': 'Our process',
       'svc.h.faq': 'Frequently asked',
-      'svc.cta': 'Request a free estimate'
+      'svc.cta': 'Request a free estimate',
+      'svc.more': 'Explore more services',
+      /* gallery */
+      'gallery.meta.title': 'Our Work — Project Gallery | LAP Landscaping | Troutman & Lake Norman NC',
+      'gallery.meta.desc': 'Browse LAP Landscaping\'s project gallery — paver patios, irrigation, lighting, drainage and more across the Lake Norman area.',
+      'gallery.eyebrow': 'Project Gallery',
+      'gallery.title': 'Our Work',
+      'gallery.lede': 'Real projects, real results — paver patios, irrigation systems, landscape lighting and more across the Lake Norman area.',
+      'gallery.tabs.all': 'All Projects',
+      'gallery.tabs.pavers': 'Pavers & Patios',
+      'gallery.tabs.sod': 'Sod & Lawn',
+      'gallery.tabs.lighting': 'Lighting',
+      'gallery.tabs.concrete': 'Concrete',
+      'gallery.tabs.irrigation': 'Irrigation',
+      'gallery.tabs.drainage': 'Drainage',
+      'gallery.tabs.travertine': 'Travertine',
+      'gallery.cta.label': 'Ready to build your outdoor space?',
+      'gallery.cta': 'Start Your Project →',
+      'gallery.viewAll': 'View Our Full Gallery →',
+      'gallery.teaser.label': 'See every project we\'ve built'
     },
     es: {
       'meta.title': 'Paisajismo y Patios de Adoquines en Troutman y Lake Norman NC | LAP',
@@ -301,7 +320,26 @@
       'svc.h.problems': 'Problemas que resolvemos',
       'svc.h.process': 'Nuestro proceso',
       'svc.h.faq': 'Preguntas frecuentes',
-      'svc.cta': 'Solicitar presupuesto gratis'
+      'svc.cta': 'Solicitar presupuesto gratis',
+      'svc.more': 'Explorar más servicios',
+      /* gallery */
+      'gallery.meta.title': 'Nuestro Trabajo — Galería de Proyectos | LAP Landscaping | Troutman y Lake Norman NC',
+      'gallery.meta.desc': 'Explore la galería de proyectos de LAP Landscaping — patios de adoquines, riego, iluminación, drenaje y más en la zona de Lake Norman.',
+      'gallery.eyebrow': 'Galería de Proyectos',
+      'gallery.title': 'Nuestro Trabajo',
+      'gallery.lede': 'Proyectos reales, resultados reales — patios de adoquines, sistemas de riego, iluminación de jardín y más en la zona de Lake Norman.',
+      'gallery.tabs.all': 'Todos los Proyectos',
+      'gallery.tabs.pavers': 'Adoquines y Patios',
+      'gallery.tabs.sod': 'Césped y Jardín',
+      'gallery.tabs.lighting': 'Iluminación',
+      'gallery.tabs.concrete': 'Concreto',
+      'gallery.tabs.irrigation': 'Riego',
+      'gallery.tabs.drainage': 'Drenaje',
+      'gallery.tabs.travertine': 'Travertino',
+      'gallery.cta.label': '¿Listo para construir su espacio exterior?',
+      'gallery.cta': 'Empiece su Proyecto →',
+      'gallery.viewAll': 'Ver Galería Completa →',
+      'gallery.teaser.label': 'Vea todos los proyectos que hemos construido'
     }
   };
 
@@ -458,5 +496,18 @@
       else if (y <= 8 && last > 8) hdr.classList.remove('hdr-scrolled');
       last = y;
     }, { passive: true });
+  }
+
+  /* Homepage teaser Swiper */
+  const teaserEl = document.querySelector('.gal-teaser-swiper');
+  if (teaserEl && typeof Swiper !== 'undefined') {
+    new Swiper('.gal-teaser-swiper', {
+      loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      speed: 900,
+      autoplay: { delay: 3200, disableOnInteraction: false },
+      allowTouchMove: false,
+    });
   }
 })();

@@ -32,6 +32,7 @@
 <link rel="preconnect" href="https://images.unsplash.com" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="icon" href="reference/lap-logo.png" type="image/png" />
+<link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" href="styles.css" />
 
 <script type="application/ld+json">
@@ -150,6 +151,7 @@
       <a href="#services" data-i18n="nav.services">Services</a>
       <a href="#projects" data-i18n="nav.work">Our Work</a>
       <a href="#about" data-i18n="nav.about">About LAP</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
       <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -163,6 +165,7 @@
     <a href="#services" data-i18n="nav.services">Services</a>
     <a href="#projects" data-i18n="nav.work">Our Work</a>
     <a href="#about" data-i18n="nav.about">About LAP</a>
+    <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
     <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
     <a href="#faq" data-i18n="nav.faq">FAQ</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -478,6 +481,36 @@
   </div>
 </section>
 
+<!-- ========== GALLERY TEASER ========== -->
+<section class="gal-teaser" aria-label="Gallery preview">
+  <div class="swiper gal-teaser-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="reference/photos/patio-pavers.jpg" alt="Paver patio installation — Lake Norman area" loading="lazy" />
+      </div>
+      <div class="swiper-slide">
+        <img src="reference/photos/hero-firepit.jpg" alt="Custom fire pit patio build" loading="lazy" />
+      </div>
+      <div class="swiper-slide">
+        <img src="reference/photos/lighting-dusk.jpg" alt="Landscape lighting at dusk" loading="lazy" />
+      </div>
+      <div class="swiper-slide">
+        <img src="reference/photos/sod-grass.jpg" alt="Fresh sod installation" loading="lazy" />
+      </div>
+      <div class="swiper-slide">
+        <img src="reference/photos/wall-stone.jpg" alt="Stone retaining wall build" loading="lazy" />
+      </div>
+      <div class="swiper-slide">
+        <img src="reference/photos/irrigation-sprinkler.jpg" alt="Irrigation system installation" loading="lazy" />
+      </div>
+    </div>
+  </div>
+  <div class="gal-teaser-cta">
+    <p class="gal-teaser-label" data-i18n="gallery.teaser.label">See every project we've built</p>
+    <a href="gallery.html" class="btn btn-primary btn-lg" data-i18n="gallery.viewAll">View Our Full Gallery →</a>
+  </div>
+</section>
+
 <!-- ========== PROCESS ========== -->
 <section class="section process-section">
   <div class="section-head reveal">
@@ -611,6 +644,7 @@
     <div class="ftr-col">
       <h4 data-i18n="ftr.h.company">Company</h4>
       <a href="#projects" data-i18n="nav.work">Our Work</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
       <a href="#about" data-i18n="nav.about">About LAP</a>
       <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
       <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -637,6 +671,7 @@
   <a href="https://www.yardbook.com/new_quote/9253aae7eebb09e976391f2283048f217c78b0cf" target="_blank" rel="noopener" class="sc-btn sc-est" data-i18n="cta.estimate">Get a Free Estimate</a>
 </div>
 
+<script src="swiper/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
